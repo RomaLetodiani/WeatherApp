@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="content">
+        <div class="loading">
+            <div class="circle">
+                <h1>Loading...</h1>
+            </div>
+        </div>
+        <div class="weather">
+            <header>
+                <input type="text" class="search" placeholder="Enter City Name Here">
+                <button>
+                    <span class="material-symbols-rounded search-icon">search</span>
+                </button>
+            </header>
+            <p class="error errorInvalid">Invalid City Name</p>
+            <p class="error errorEmpty">Please Enter A City Name</p>
+            <main>
+                <h1></h1>
+                <h2 class="time"></h2>
+            </main>
+            <footer>
+                <div>
+                    <div>
+                        <span class="material-symbols-rounded">thermometer</span>
+                        <div>
+                            <h3><span class="gradus"></span>°C</h3>
+                            <span>Temperature</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="material-symbols-rounded dayNight-icon"></span>
+                        <div>
+                            <h3 class="weatherDesc"></h3>
+                            <span class="dayNight"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="material-symbols-rounded">water</span>
+                        <div>
+                            <h3><span class="humidity"></span>%</h3>
+                            <span>Humidity</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="material-symbols-rounded">air</span>
+                        <div class="speedDiv">
+                            <h3><span class="speed"></span> km/h</h3>
+                            <span>Wind Speed</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
